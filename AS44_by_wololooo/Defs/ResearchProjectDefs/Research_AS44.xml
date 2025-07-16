@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+  
+	<!-- Naming the rifle's research etc. -->
+    <defName>Research_AS44_by_wololooo</defName>
+    <label>AS44</label>
+	<description>Recovered from the corrupted memory core of a crashed colonial freighter near a neutron star, the AS-44 is a prototype assault rifle born in the final days of Old Earth’s last great war. Originally designed in 1944 by Soviet engineer Alexey Sudayev, it was chambered for the then-experimental 7.62×39mm cartridge — a bold step toward mobile, automatic infantry arms.
+
+Few were ever produced. Too heavy, too complex, too soon — the AS-44 was shelved and forgotten as Earth slid into ruin. But centuries later, fragments of its schematics were salvaged and rebuilt on the Rim. The rifle returned, not refined, but powerful.
+
+An unfinished weapon from a fallen world, reborn in desperation. Brutal. Rare. Real.
+
+~wololooo</description>
+
+	<tab>SovietGuns_by_wololooo</tab>
+	
+	<!-- Cost and tech level. -->
+    <baseCost>2800</baseCost>
+    <techLevel>Industrial</techLevel>
+
+	<!-- The research(es) should finished before the rifle's research. -->
+	
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>PrecisionRifling</li>
+	  <li>Soviet_Research_Program</li>
+	  <li>Soviet_Assault_Rifle_Program</li>
+    </prerequisites>
+	
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
+	<!-- The place of rifle's on the research menu. -->
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+	
+
+  </ResearchProjectDef>
+
+</Defs>

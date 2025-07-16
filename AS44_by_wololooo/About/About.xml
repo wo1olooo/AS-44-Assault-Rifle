@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>AS-44 by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.ASFortyFour</packageId>
+  <modVersion>1.0.0.0</modVersion>
+
+  <description>The AS-44 is a ghost of a weapon that never truly had its time — a prototype birthed in the chaos of Earth’s bloodiest conflict, forged in desperation, and abandoned before it could shape the future it hinted at.
+
+Developed in the final years of the Second World War on Old Earth — humanity’s cradle, now a burned-out memory scattered among the stars — the AS-44 was the brainchild of Soviet gunsmith Alexey Sudayev. It was among the very first Soviet attempts to create a true assault rifle: select-fire, compact, and chambered in the intermediate 7.62×39mm cartridge. This new round was a revelation — less punishing than full-power battle cartridges, yet far more capable than pistol calibers. The AS-44 was designed to bring mobility and sustained fire into a single soldier’s hands.
+
+But the world was collapsing faster than it could be rebuilt. Only a handful of prototypes were ever produced. Each one was heavy, temperamental, and riddled with experimental mechanisms. The weapon was too ambitious for its time — its complexity outpaced the era’s metallurgy, and Sudayev himself died before refinement could begin. The AS-44 project was shelved, overtaken by simpler, more reliable successors. Its name faded into footnotes, its impact nearly lost to the fires of history.
+
+Yet nothing stays buried forever on the Rim.
+
+Centuries later, long after Earth fell to flame, famine, and silence, fragments of the AS-44’s design were recovered in the memory core of a crashed colonial freighter drifting near a neutron star. Schematics, corrupted but salvageable, were pieced together by a weaponsmith with more will than sense. What emerged was a recreation of the AS-44 — heavy, brutal, and beautiful in its raw, unfinished power.
+
+Now reborn in the hands of desperate Rimworld settlers and scavengers, the AS-44 offers what it always promised: reliable automatic fire, solid mid-range performance, and the spirit of a weapon meant to shape a better future — even if that future never came.
+
+It is clunky. It is rare. It is not perfect. But it works.
+
+A prototype reborn. A future that never was — finally given a second chance among the stars.
+
+
+~wololooo
+</description>
+	
+  <supportedVersions>
+	<li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+  
+  <modDependencies>
+    <li>
+      <packageId>wololooo.sovietResearchTab</packageId>
+      <displayName>Soviet Rifle Research Tab</displayName>
+      <downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+    </li>
+  </modDependencies>
+  
+</ModMetaData>

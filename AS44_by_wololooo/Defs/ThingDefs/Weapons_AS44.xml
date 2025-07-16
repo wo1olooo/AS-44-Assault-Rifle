@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<Defs>	
+  <ThingDef ParentName="BaseHumanMakeableGun">	
+	<!-- Define the gun name, labels etc. -->
+    <defName>Gun_AS44_wololooo</defName>
+    <label>AS 44</label>
+	
+    <description>The AS-44 is a rare and volatile relic from the final chapters of Old Earth’s Second World War — a weapon born not from refinement, but from raw ambition. It stands at a forgotten crossroads in the evolution of infantry arms: the Soviet Union’s first true step toward the era of assault rifles.
+
+Conceived by engineer Alexey Sudayev, the AS-44 (Avtomat Sudayeva, model 1944) was designed to chamber the newly-developed 7.62×39mm intermediate cartridge — a revolutionary round intended to combine the power of rifle ammunition with the control of submachine gun fire. The result was a select-fire prototype capable of both semi-automatic precision and fully-automatic suppression, bringing the firepower of a squad into the hands of a single soldier.
+
+But the AS-44 was ahead of its time, and burdened by it. The rifle was heavy, complex, and prone to failure under battlefield stress. Only a handful of prototypes were ever completed before Sudayev’s untimely death and the weapon’s abrupt cancellation. What might have been a standard-issue rifle became a ghost — an unrealized vision buried beneath Earth’s expanding war machine.
+
+Even in its unfinished state, the AS-44 hinted at the shape of things to come. It served as a bridge between old doctrines and the automatic age that would follow, laying conceptual groundwork for the AK-series rifles that soon dominated Earth’s arsenals. But as the world moved forward, the AS-44 was quietly forgotten.
+
+Centuries later, long after Earth fell to flame, famine, and silence, fragments of the AS-44’s design were recovered in the memory core of a crashed colonial freighter drifting near a neutron star. Schematics, corrupted but salvageable, were pieced together by a weaponsmith with more will than sense. What emerged was a recreation of the AS-44 — heavy, brutal, and beautiful in its raw, unfinished power.
+
+Now, on the lawless fringe of known space, the AS-44 is wielded by exiles, colonists, and renegades who value its raw power and rare heritage. Though difficult to maintain and harsh in recoil, its presence on the battlefield is unmistakable — a reminder that even failed experiments can echo across centuries.
+
+An unfinished weapon reborn. Heavy, ambitious, and steeped in history. A prototype not forgotten — but resurrected.
+
+~wololooo</description>
+	
+	
+	<!-- The rifle's spite location: -->
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_AS44</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.10</drawSize>
+    </graphicData>
+	
+	<!-- The rifle's sound, I will use the basic game's sound currently. -->
+    <soundInteract>Interact_Rifle</soundInteract>
+	
+	<!-- The recipe of the gun. -->
+    <recipeMaker>
+	
+	  <!-- Where the weapon will crafted at. -->
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+	  
+	  <!-- What should be researched before to create the gun. -->
+      <researchPrerequisite>Research_AS44_by_wololooo</researchPrerequisite>
+	  
+	  <!-- The skill requirement to craft the weapon. -->
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+	  
+	  
+	  <!-- The gun's display place. -->
+      <displayPriority>441</displayPriority>
+    </recipeMaker>
+	
+	
+	<!-- By this, the gun also can be obtained from the quests. -->
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+	
+
+	<!-- The rifle's stats: -->
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>4.4</Mass>
+      <AccuracyTouch>0.58</AccuracyTouch>
+      <AccuracyShort>0.63</AccuracyShort>
+      <AccuracyMedium>0.57</AccuracyMedium>
+      <AccuracyLong>0.49</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+	  <MarketValue>600</MarketValue>
+	  <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+	
+	
+	<!-- Which materials and how many of them will cost the rifle to craft: -->
+	<costList>
+	  <Steel>72</Steel>
+	  <ComponentIndustrial>3</ComponentIndustrial>
+	  <WoodLog>15</WoodLog>
+	</costList>
+	
+	
+	<!-- What can be done with the rifle and how will it sound like: -->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AS44_762by41mm</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>28</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <soundCast>wololooo_as44_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>16</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+	
+	<!-- The weapon tags: -->
+    <weaponTags>
+      <li>AS44</li>
+    </weaponTags>
+	
+	
+	<!-- Also what can be done with the other parts of the gun: -->
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+	
+	
+	<!-- The bullet will use the gun: -->
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AS44_762by41mm</defName>
+    <label>7,62×41mm AS44 Bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<!-- The bullet specifications. -->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+
+      <damageAmountBase>15</damageAmountBase>
+	  
+      <speed>69</speed> 
+
+	  <stoppingPower>1.3</stoppingPower>
+	  
+	  <armorPenetrationBase>0.36</armorPenetrationBase>
+	  
+	  
+    </projectile>
+  </ThingDef>
+  
+</Defs>
